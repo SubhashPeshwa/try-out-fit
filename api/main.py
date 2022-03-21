@@ -10,7 +10,6 @@ class Item(BaseModel):
     price: float
     tax: Optional[float] = None
 
-
 @app.get("/health")
 async def health():
     return {"message": "OK 200"}
@@ -36,5 +35,3 @@ async def read_item(item_id: str, q: Optional[str] = None):
 @app.post("/items/")
 async def create_item(item: Item):
     return item
-    
-

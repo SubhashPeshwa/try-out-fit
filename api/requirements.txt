@@ -1,0 +1,5 @@
+fastapi
+pydantic
+typing
+gunicorn
+uvicorn==0.11.8
